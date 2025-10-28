@@ -1,12 +1,36 @@
 ---
 // import Welcome from '../components/Welcome.astro';
 
+import Badge from '../components/Badge.astro';
 import Layout from '../layouts/Layout.astro';
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
-<Layout>
-	<!-- <Welcome /> -->
+<Layout title="Melvin Brito Portfolio">
+	<main>
+		<section class="w-full mx-auto lg:w-[740px] py-44">
+			<h1 class="text-5xl font-bold text-white flex flex-row items-center gap-x-2 pb-4">
+				Hola, soy Melvin Brito
+				<a
+					href="https://www.linkedin.com/in/melvin-brito-7b7904296/"
+					target="_blank"
+					rel="noopener"
+					class="flex justify-center items-center">
+					<Badge>Disponible para trabajar</Badge>
+				</a>
+
+
+			</h1>
+			<p class="text-2xl text-white mt-4 max-w-xl text-center text-wrap opacity-80">
+				Bienvenido a mi portafolio personal. Soy un desarrollador web apasionado por crear experiencias digitales únicas y funcionales. Explora mis proyectos y no dudes en contactarme para colaborar.
+			</p>
+			<p class="text-2xl text-white mt-4 max-w-xl text-center text-wrap opacity-80">
+				Soy un programador web que recientemente he completado un Grado Superior de Programación en Desarrollo de Páginas web full-stack. Durante este programa, adquirí habilidades sólidas en tecnologías como HTML, CSS, JavaScript, Bootstrap, React, Node.js, PHP y bases de datos. Estoy emocionado por aplicar mis conocimientos en proyectos reales y seguir creciendo en el campo del desarrollo web.
+			</p>
+		</section>
+
+	</main>
+
 </Layout>
