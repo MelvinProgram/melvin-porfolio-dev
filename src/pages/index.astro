@@ -1,20 +1,29 @@
 ---
-// import Welcome from '../components/Welcome.astro';
-
 import Badge from '../components/Badge.astro';
 import Layout from '../layouts/Layout.astro';
-
+import LinkedInIcon from '../icons/LinkedIn.astro';
+import GitHubIcon from '../icons/GitHub.astro';
+import HtmlIcon from '../icons/Html.astro';
+import BootstrapIcon from '../icons/Bootstrap.astro';
+import CssIcon from '../icons/Css.astro';
+import ReactIcon from '../icons/React.astro';
+import PhpIcon from '../icons/Php.astro';
+import NodeJsIcon from '../icons/NodeJs.astro';
+import MySqlIcon from '../icons/MySql.astro';
+import JavaScriptIcon from '../icons/JavaScript.astro';
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
 <Layout title="Melvin Brito Portfolio">
 	<main>
-		<section class="w-full mx-auto lg:w-[740px] py-44">
-			<img class="rounded-full w-12 h-12"
+		<section class="mx-auto w-full lg:w-[740px] py-5 justify-center flex flex-col items-center mt-20 ">
+			<div class="w-full ml-30 ">
+				<img class="rounded-full w-40 h-40 mb-8"
 				src="https://avatars.githubusercontent.com/u/157369809?v=4"
 				alt="Melvin Foto"
 			/>
+			</div>
 			<h1 class="text-5xl font-bold text-white flex flex-row items-center gap-x-2 pb-4">
 				Hola, soy Melvin Brito
 				<a
@@ -27,12 +36,115 @@ import Layout from '../layouts/Layout.astro';
 
 
 			</h1>
-			<p class="text-2xl text-white mt-4 max-w-xl text-center text-wrap">
-				Bienvenido a mi portafolio personal. Soy un desarrollador web apasionado por crear experiencias digitales únicas y funcionales. Explora mis proyectos y no dudes en contactarme para colaborar.
-			</p>
-			<p class="text-2xl text-white mt-4 max-w-xl text-center text-wrap">
-				Soy un programador web que recientemente he completado un Grado Superior de Programación en Desarrollo de Páginas web full-stack. Durante este programa, adquirí habilidades sólidas en tecnologías como HTML, CSS, JavaScript, Bootstrap, React, Node.js, PHP y bases de datos. Estoy emocionado por aplicar mis conocimientos en proyectos reales y seguir creciendo en el campo del desarrollo web.
-			</p>
+			<h2 class="text-xl text-white text-left mt-4 max-w-xl text-wrap opacity-70">
+				Bienvenidos a mi portafolio personal. Soy un <span class="text-blue-500">Programador de Páginas Web</span> apasionado por crear experiencias digitales únicas y funcionales. Actualmente estoy viviendo en <span class="text-orange-400"> Madrid, España.</span> Donde recientemente he completado un Grado Superior de Programación en Desarrollo de Páginas web full-stack.
+			</h2>
+			<h2 class="text-xl text-white text-left mt-4 max-w-xl w-full text-wrap opacity-70">
+				 Durante este grado superior, adquirí habilidades sólidas en tecnologías y herramientas claves:
+			</h2>
+
+			<ul class="mt-8 flex md:flex-row gap-x-6 gap-y-4">
+				<li>
+					<a
+					href="https://www.linkedin.com/in/melvin-brito-7b7904296/"
+					target="_blank"
+					rel="noopener noreferrer"
+					class="flex items-center mt-4 text-white hover:text-blue-500 transition-colors duration-300">
+						<LinkedInIcon />
+						LinkedIn
+					</a>
+				</li>
+				<li><a href="https://github.com/melvinbrito" target="_blank" rel="noopener noreferrer"></a></li>
+					<a
+					href="https://github.com/MelvinProgram"
+					target="_blank"
+					rel="noopener noreferrer"
+					class="flex items-center mt-4 text-white hover:text-blue-500 transition-colors duration-300">
+						<GitHubIcon />
+						GitHub
+					</a>
+				</li>
+				<li>
+					<a
+					href="#"
+					target="_self"
+					rel="noopener noreferrer"
+					class="flex items-center mt-4 text-white hover:text-blue-500 transition-colors duration-300">
+						<HtmlIcon />
+						HTML
+					</a>
+				</li>
+				<li>
+					<a
+					href="#"
+					target="_self"
+					rel="noopener noreferrer"
+					class="flex items-center mt-4 text-white hover:text-blue-500 transition-colors duration-300">
+						<BootstrapIcon />
+						Bootstrap
+					</a>
+				</li>
+				<li>
+					<a
+					href="#"
+					target="_self"
+					rel="noopener noreferrer"
+					class="flex items-center mt-4 text-white hover:text-blue-500 transition-colors duration-300">
+						<CssIcon />
+						CSS
+					</a>
+				</li>
+				<li>
+					<a
+					href="#"
+					target="_self"
+					rel="noopener noreferrer"
+					class="flex items-center mt-4 text-white hover:text-blue-500 transition-colors duration-300">
+						<ReactIcon />
+						React
+					</a>
+				</li>
+				<li>
+					<a
+					href="#"
+					target="_self"
+					rel="noopener noreferrer"
+					class="flex items-center mt-4 text-white hover:text-blue-500 transition-colors duration-300">
+						<PhpIcon />
+						PHP
+					</a>
+				</li>
+				<li>
+					<a
+					href="#"
+					target="_self"
+					rel="noopener noreferrer"
+					class="flex items-center mt-4 text-white hover:text-blue-500 transition-colors duration-300">
+						<NodeJsIcon />
+						Node.js
+					</a>
+				</li>
+				<li>
+					<a
+					href="#"
+					target="_self"
+					rel="noopener noreferrer"
+					class="flex items-center mt-4 text-white hover:text-blue-500 transition-colors duration-300">
+						<MySqlIcon />
+						MySQL
+					</a>
+				</li>
+				<li>
+					<a
+					href="#"
+					target="_self"
+					rel="noopener noreferrer"
+					class="flex items-center mt-4 text-white hover:text-blue-500 transition-colors duration-300">
+						<JavaScriptIcon />
+						JavaScript
+					</a>
+				</li>
+			</ul>
 		</section>
 
 	</main>
