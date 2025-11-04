@@ -1,6 +1,7 @@
 ---
 import Badge from '../components/Badge.astro';
 import Layout from '../layouts/Layout.astro';
+import SocialPill from '../icons/SocialPill.astro';
 import LinkedInIcon from '../icons/LinkedIn.astro';
 import GitHubIcon from '../icons/GitHub.astro';
 import HtmlIcon from '../icons/Html.astro';
@@ -13,6 +14,7 @@ import MySqlIcon from '../icons/MySql.astro';
 import JavaScriptIcon from '../icons/JavaScript.astro';
 import TailwindCss from '../icons/TailwindCss.astro';
 import AstroIcon from '../icons/AstroIcon.astro';
+{Astro.props}; // Props for the Astro component
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
@@ -20,14 +22,14 @@ import AstroIcon from '../icons/AstroIcon.astro';
 <Layout title="Melvin Brito Portfolio">
 	<main>
 		<section class="mx-auto w-full lg:w-[740px] py-5 justify-center flex flex-col items-center mt-20 ">
-			<div class="w-full ml-30">
-				<img class="rounded-full w-40 h-40 mb-8 border-4 border-blue-500"
+			<div class="w-full flex justify-center pb-5">
+				<img class="rounded-full w-40 h-40 mb-8 border-4 border-blue-500 hover:scale-105 transition-all duration-300 shadow-2xl shadow-blue-500/20"
 				src="https://avatars.githubusercontent.com/u/157369809?v=4"
 				alt="Melvin Foto"
 			/>
 			</div>
-			<h1 class="text-5xl font-bold text-white flex flex-row items-center gap-x-2 pb-4">
-				Hola, soy <span class="text-blue-500 hover:text-amber-400">Melvin Brito</span>
+			<h1 class="lg:w-full text-5xl font-bold text-white flex flex-row items-center gap-x-2 pb-7">
+				Hola, soy <span class="text-blue-500">Melvin Brito</span>
 				<a
 					href="https://www.linkedin.com/in/melvin-brito-7b7904296/"
 					target="_blank"
@@ -38,134 +40,63 @@ import AstroIcon from '../icons/AstroIcon.astro';
 
 
 			</h1>
-			<h2 class="text-xl text-white text-left mt-4 max-w-xl text-wrap opacity-90">
-				Bienvenidos a mi portafolio personal. Soy un <span class="text-blue-500 opacity-100">Programador de Páginas Web</span> apasionado por crear experiencias digitales únicas y funcionales. Actualmente estoy viviendo en <span class="text-amber-400"> Madrid, España.</span> Donde recientemente he completado un Grado Superior de Programación en Desarrollo de Páginas web full-stack en la <a  class="text-blue-500 opacity-100 hover:underline" href="https://www.masterd.es/fp-tecnico-superior-desarrollo-web" target="_blank">Escuela de Informática y Comunicaciones MasterD</a>.
+			<h2 class="lg:w-full pb-4 text-xl text-white text-justify mt-4 opacity-90">
+				Bienvenidos a mi portafolio personal. Soy un <span class="text-blue-500/90">Programador de Páginas Web</span> apasionado por crear experiencias digitales únicas y funcionales. Actualmente estoy viviendo en <span class="text-red-600/80 hover:text-yellow-400"> Madrid, España.</span> Donde recientemente he completado un Grado Superior de Programación en Desarrollo de Páginas web full-stack en la <a  class="text-blue-500 opacity-100 hover:underline" href="https://www.masterd.es/fp-tecnico-superior-desarrollo-web" target="_blank">Escuela de Informática y Comunicaciones MasterD</a>.
 			</h2>
-			<h2 class="text-xl text-white text-left mt-4 max-w-xl text-wrap opacity-70">
+			<h2 class="lg:w-full text-xl text-white text-justify mt-4 text-wrap opacity-70">
 				 Durante este grado superior, adquirí habilidades sólidas en tecnologías y herramientas claves:
 			</h2>
 
 			<ul class="px-5 mt-8 flex md:flex-row flex-wrap justify-center gap-x-4 gap-y-4">
-				<li>
-					<a
-					href="#"
-					target="_self"
-					rel="noopener noreferrer"
-					class="flex items-center mt-4 text-white hover:text-orange-500 transition-colors duration-300">
-						<HtmlIcon />
-						HTML
-					</a>
-				</li>
-				<li>
-					<a
-					href="#"
-					target="_self"
-					rel="noopener noreferrer"
-					class="flex items-center mt-4 text-white hover:text-purple-500 transition-colors duration-300">
-						<CssIcon />
-						CSS
-					</a>
-				</li>
-				<li>
-					<a
-					href="#"
-					target="_self"
-					rel="noopener noreferrer"
-					class="flex items-center mt-4 text-white hover:text-yellow-500 transition-colors duration-300">
-						<JavaScriptIcon />
-						JavaScript
-					</a>
-				</li>
-				<li>
-					<a
-					href="#"
-					target="_self"
-					rel="noopener noreferrer"
-					class="flex items-center mt-4 text-white hover:text-blue-500 transition-colors duration-300">
-						<ReactIcon />
-						React
-					</a>
-				</li>
-				<li>
-					<a
-					href="#"
-					target="_self"
-					rel="noopener noreferrer"
-					class="flex items-center mt-4 text-white hover:text-green-500 transition-colors duration-300">
-						<NodeJsIcon />
-						Node.js
-					</a>
-				</li>
-				<li>
-					<a
-					href="#"
-					target="_self"
-					rel="noopener noreferrer"
-					class="flex items-center mt-4 text-white hover:text-blue-500 transition-colors duration-300">
-						<BootstrapIcon />
-						Bootstrap
-					</a>
-				</li>
-				<li>
-					<a
-					href="#"
-					target="_self"
-					rel="noopener noreferrer"
-					class="flex items-center mt-4 text-white hover:text-pink-500 transition-colors duration-300">
-						<AstroIcon />
-						Astro
-					</a>
-				</li>
-				<li>
-					<a
-					href="#"
-					target="_self"
-					rel="noopener noreferrer"
-					class="flex items-center mt-4 text-white hover:text-blue-500 transition-colors duration-300">
-						<TailwindCss />
-						Tailwind CSS
-					</a>
-				</li>
-				<li>
-					<a
-					href="#"
-					target="_self"
-					rel="noopener noreferrer"
-					class="flex items-center mt-4 text-white hover:text-blue-500 transition-colors duration-300">
-						<PhpIcon />
-						PHP
-					</a>
-				</li>
-				<li>
-					<a
-					href="#"
-					target="_self"
-					rel="noopener noreferrer"
-					class="flex items-center mt-4 text-white hover:text-blue-500 transition-colors duration-300">
-						<MySqlIcon />
-						MySQL
-					</a>
-				</li>
-				<li>
-					<a
-					href="https://github.com/MelvinProgram"
-					target="_blank"
-					rel="noopener noreferrer"
-					class="flex items-center mt-4 text-white hover:text-blue-500 transition-colors duration-300">
-						<GitHubIcon />
-						GitHub
-					</a>
-				</li>
-				<li>
-					<a
-					href="https://www.linkedin.com/in/melvin-brito-7b7904296/"
-					target="_blank"
-					rel="noopener noreferrer"
-					class="flex items-center mt-4 text-white hover:text-blue-500 transition-colors duration-300">
-						<LinkedInIcon />
-						LinkedIn
-					</a>
-				</li>
+				<SocialPill href="#" hoverColor="orange-500">
+					<HtmlIcon />
+					HTML5
+				</SocialPill>
+				<SocialPill href="#" hoverColor="blue-500">
+					<CssIcon />
+					CSS3
+				</SocialPill>
+				<SocialPill href="#" hoverColor="yellow-400">
+					<JavaScriptIcon />
+					JavaScript
+				</SocialPill>
+				<SocialPill href="#" hoverColor="blue-400">
+					<ReactIcon />
+					React.js
+				</SocialPill>
+				<SocialPill href="#" hoverColor="green-500">
+					<NodeJsIcon />
+					Node.js
+				</SocialPill>
+				<SocialPill href="#" hoverColor="purple-600">
+					<BootstrapIcon />
+					Bootstrap
+				</SocialPill>
+				<SocialPill href="#" hoverColor="cyan-400">
+					<AstroIcon />
+					Astro
+				</SocialPill>
+				<SocialPill href="#" hoverColor="teal-400">
+					<TailwindCss />
+					Tailwind CSS
+				</SocialPill>
+				<SocialPill href="#" hoverColor="purple-500">
+					<PhpIcon />
+					PHP
+				</SocialPill>
+				<SocialPill href="#" hoverColor="orange-600">
+					<MySqlIcon />
+					MySQL
+				</SocialPill>
+				<SocialPill href="https://github.com/MelvinProgram" hoverColor="gray-800">
+					<GitHubIcon />
+					GitHub
+				</SocialPill>
+
+				<SocialPill href="https://www.linkedin.com/in/melvin-brito-7b7904296/" hoverColor="blue-700">
+					<LinkedInIcon />
+					LinkedIn
+				</SocialPill>
 
 			</ul>
 		</section>

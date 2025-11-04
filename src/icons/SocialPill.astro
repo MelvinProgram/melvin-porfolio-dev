@@ -1,0 +1,13 @@
+<a
+    class={`
+    bg-white/5 text-white
+    rounded-full border border-white/10
+    mt-4 px-4 flex
+    items-center
+    hover:text-{Astro.props.hoverColor} hover:scale-105
+    transition-colors duration-300`}
+    {...Astro.props}
+    target="_blank"
+    rel="noopener noreferrer">
+    <slot />
+</a>
