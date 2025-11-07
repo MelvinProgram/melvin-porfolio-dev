@@ -14,7 +14,8 @@ import MySqlIcon from '../icons/MySql.astro';
 import JavaScriptIcon from '../icons/JavaScript.astro';
 import TailwindCss from '../icons/TailwindCss.astro';
 import AstroIcon from '../icons/AstroIcon.astro';
-{Astro.props}; // Props for the Astro component
+const hoverColor = Astro.props.hoverColor;
+
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
@@ -97,7 +98,6 @@ import AstroIcon from '../icons/AstroIcon.astro';
 					<LinkedInIcon />
 					LinkedIn
 				</SocialPill>
-
 			</ul>
 		</section>
 
