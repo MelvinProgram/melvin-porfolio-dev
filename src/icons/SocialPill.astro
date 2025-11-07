@@ -1,5 +1,20 @@
 ---
 const { hoverColor = "" } = Astro.props; // Destructure hoverColor prop with a default value
+
+const colorMap = {
+    "orange-400": "hover:text-orange-400",
+    "blue-500": "hover:text-blue-500",
+    "red-400": "hover:text-red-400",
+    "blue-400": "hover:text-blue-400",
+    "green-500": "hover:text-green-500",
+    "purple-600": "hover:text-purple-600",
+    "cyan-400": "hover:text-cyan-400",
+    "teal-400": "hover:text-teal-400",
+    "purple-500": "hover:text-purple-500",
+    "orange-600": "hover:text-orange-600",
+    "gray-800": "hover:text-gray-800",
+    "blue-700": "hover:text-blue-700",
+}
 ---
 <a
     class={`
