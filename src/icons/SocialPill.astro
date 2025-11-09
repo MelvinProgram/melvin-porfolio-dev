@@ -12,7 +12,7 @@ const colorMap = {
     "teal-400": "hover:text-teal-400",
     "purple-500": "hover:text-purple-500",
     "orange-600": "hover:text-orange-600",
-    "gray-800": "hover:text-gray-800",
+    "gray-400": "hover:text-gray-400",
     "blue-700": "hover:text-blue-700",
 }
 ---
@@ -23,9 +23,11 @@ const colorMap = {
     mt-4 px-4 flex
     items-center
     hover:text-${hoverColor} hover:scale-105
-    transition-colors duration-300`}
+    transition-colors duration-300`
+    }
     {...Astro.props}
     target="_blank"
-    rel="noopener noreferrer">
+    rel="noopener noreferrer"
+    >
     <slot />
 </a>
