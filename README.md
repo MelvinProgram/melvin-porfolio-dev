@@ -42,6 +42,8 @@ The project is organized with the following structure:
 ├── package.json
 └── tsconfig.json
 
+```
+
 🧞 Commands
 All commands are run from the root of the project, from a terminal:
 
