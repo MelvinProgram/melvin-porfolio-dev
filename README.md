@@ -68,6 +68,7 @@ This project is open source and available under the MIT License.
 📧 Contact
 Feel free to reach out to me through my social media links in the portfolio!
 
+```text
 You can copy this content and replace the current content of your README.md file. The updated version includes:
 1. A personalized title and description
 2. An accurate project structure that matches your current workspace
@@ -78,7 +79,8 @@ You can copy this content and replace the current content of your README.md file
 2. An accurate project structure that matches your current workspace
 3. Simplified command list focusing on the essential commands
 4. A new Technologies Used section highlighting the key technologies in your portfolio
-5. License and Contact sections for additional information| Get help using the Astro CLI                     |
+5. License and Contact sections for additional information| Get help using the Astro CLI |
+```
 
 ## 👀 Want to learn more?
 
