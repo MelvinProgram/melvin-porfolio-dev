@@ -9,9 +9,11 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/tailwind": "^6.0.2",
     "@fontsource-variable/onest": "^5.2.11",
-    "@tailwindcss/vite": "^4.1.16",
-    "astro": "^5.15.1",
-    "tailwindcss": "^4.1.16"
+    "@tailwindcss/postcss": "^4.1.17",
+    "@tailwindcss/vite": "^4.1.17",
+    "astro": "^5.15.4",
+    "tailwindcss": "^4.1.17"
   }
 }
