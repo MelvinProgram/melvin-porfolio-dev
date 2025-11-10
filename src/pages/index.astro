@@ -2,8 +2,6 @@
 import Badge from '../components/Badge.astro';
 import Layout from '../layouts/Layout.astro';
 import SocialPill from '../icons/SocialPill.astro';
-import LinkedInIcon from '../icons/LinkedIn.astro';
-import GitHubIcon from '../icons/GitHub.astro';
 import HtmlIcon from '../icons/Html.astro';
 import BootstrapIcon from '../icons/Bootstrap.astro';
 import CssIcon from '../icons/Css.astro';
@@ -16,6 +14,7 @@ import TailwindCss from '../icons/TailwindCss.astro';
 import AstroIcon from '../icons/AstroIcon.astro';
 import SectionProyectos from '../components/SectionProyectos.astro';
 import Footer from '../components/Footer.astro'
+import SeccionSobreMi from '../components/SeccionSobreMi.astro';
 const hoverColor = Astro.props.hoverColor;
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
@@ -44,7 +43,9 @@ const hoverColor = Astro.props.hoverColor;
 
 			</h1>
 			<h2 class="lg:w-full pb-4 text-xl text-white text-justify mt-4 opacity-90">
-				Bienvenidos a mi portafolio personal. Soy un <span class="text-blue-400/90">Programador de Páginas Web</span> apasionado por crear experiencias digitales únicas y funcionales. Actualmente estoy viviendo en <span class="text-yellow-400"> Madrid, España.</span> Donde recientemente he completado un Grado Superior de Programación en Desarrollo de Páginas web full-stack en la <a  class="text-blue-400 opacity-100 hover:underline" href="https://www.masterd.es/fp-tecnico-superior-desarrollo-web" target="_blank">Escuela de Informática y Comunicaciones MasterD</a>.
+				Bienvenidos a mi portafolio personal. Soy un <span class="text-blue-400/90">Programador de Páginas Web</span> apasionado por crear experiencias digitales únicas y funcionales. 
+				<br><br>
+				Actualmente estoy viviendo en <span class="text-yellow-400"> Madrid, España.</span> Donde recientemente he completado un Grado Superior de Programación en Desarrollo de Páginas web full-stack en la <a  class="text-blue-400 opacity-100 hover:underline" href="https://www.masterd.es/fp-tecnico-superior-desarrollo-web" target="_blank">Escuela de Informática y Comunicaciones MasterD</a>.
 			</h2>
 			<h2 class="lg:w-full text-xl text-white text-justify mt-4 text-wrap opacity-90">
 				 Durante este grado superior, adquirí habilidades sólidas en tecnologías y herramientas claves:
@@ -83,7 +84,7 @@ const hoverColor = Astro.props.hoverColor;
 					<TailwindCss />
 					Tailwind CSS
 				</SocialPill>
-				<SocialPill href="#" hoverColor="purple-300">
+				<SocialPill href="#" hoverColor="purple-400">
 					<PhpIcon />
 					PHP
 				</SocialPill>
@@ -91,18 +92,10 @@ const hoverColor = Astro.props.hoverColor;
 					<MySqlIcon />
 					MySQL
 				</SocialPill>
-				<SocialPill href="https://github.com/MelvinProgram" hoverColor="gray-400">
-					<GitHubIcon />
-					GitHub
-				</SocialPill>
-
-				<SocialPill href="https://www.linkedin.com/in/melvin-brito-7b7904296/" hoverColor="blue-400">
-					<LinkedInIcon />
-					LinkedIn
-				</SocialPill>
 			</ul>
 		</section>
 		<SectionProyectos />
+		<SeccionSobreMi />
 	</main>
 	<Footer />
 
