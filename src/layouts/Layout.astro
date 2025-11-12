@@ -2,6 +2,8 @@
   import '@fontsource-variable/onest';
   import '../styles/global.css'
   import Header from '../components/Header.astro'
+//   import "../scripts/scrollFade.js";
+
   interface Props {
 	title: string;
   }// Define the props interface
@@ -21,6 +23,9 @@
 		<Header />
 		<slot />
 	</body>
+	<script src="../scripts/activeNav.js"></script>
+	<script src="/src/scripts/scrollFade.js"></script>
+
 </html>
 
 <style is:global>

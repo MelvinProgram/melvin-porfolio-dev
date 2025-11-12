@@ -1,10 +1,13 @@
-<header class="w-full flex justify-center items-center py-6 mx-auto bg-linear-to-r from-white/10 to-blue-500/10 backdrop-blur-lg border border-white/20 rounded-2xl">
+---
+import { setupActiveNav } from "../scripts/activeNav.js";
+---
+<header class="w-full d-relative flex justify-center items-center py-2 mx-auto bg-linear-to-r from-white/10 to-blue-500/10 backdrop-blur-lg border border-white/20 rounded-2xl shadow-md fixed top-0 left-0 right-0 z-50">
 
-    <nav class="w-full h-7 flex flex-row justify-center mx-auto gap-x-10 opacity-80 text-white font-medium text-lg">
-        <a class="hover:text-blue-300 hover:border-b hover:scale-105 transition-transform duration-100" href="/">Inicio</a>
-        <a class="hover:text-blue-300 hover:border-b hover:scale-105 transition-transform duration-100" href="#sobre-mi">Sobre mí</a>
-        <a class="hover:text-blue-300 hover:border-b hover:scale-105 transition-transform duration-100" href="#proyectos">Proyectos</a>
-        <a class="hover:text-blue-300 hover:border-b hover:scale-105 transition-transform duration-100" href="#footer-contacto">Contacto</a>
+    <nav id="header0" class="w-full h-7 flex flex-row justify-center mx-auto gap-x-10 opacity-80 text-white font-medium text-lg">
+        <a class="nav-link hover:text-blue-300 hover:border-b hover:scale-105 transition-transform duration-100" href="#inicio">Inicio</a>
+        <a class="nav-link hover:text-blue-300 hover:border-b hover:scale-105 transition-transform duration-100" href="#proyectos">Proyectos</a>
+        <a class="nav-link hover:text-blue-300 hover:border-b hover:scale-105 transition-transform duration-100" href="#sobre-mi">Sobre mí</a>
+        <a class="nav-link hover:text-blue-300 hover:border-b hover:scale-105 transition-transform duration-100" href="#footer-contacto">Contacto</a>
     </nav>
-
+    
 </header>
