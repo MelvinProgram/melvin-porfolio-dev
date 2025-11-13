@@ -4,10 +4,10 @@ import MailIcon from '../icons/MailIcon.astro';
 import GitHub from '../icons/GitHub.astro';
 import LinkedIn from '../icons/LinkedIn.astro';
 ---
-<footer id="footer-contacto" class="w-full bg-gray-800 mt-12">
+<footer id="footer-contacto" class="lg:w-full w-4xl bg-gray-800 mt-12">
     <div class="w-full px-4 py-6 bg-gray-900 text-center">
         <ul class="fade-section w-full px-5 my-4 flex md:flex-row flex-wrap justify-center gap-x-4 mx-auto gap-y-2">
-            <h2 class="w-full text-white/50 md:text-2xl text-lg font-semibold mb-2 text-shadow-lg text-shadow-black-600/50">
+            <h2 class="w-full text-white/50 text-4xl lg:text-3xl underline underline-offset-10 decoration-yellow-600/90 font-semibold mb-2 text-shadow-lg/40">
                 Contacto
             </h2>
             <SocialPill class="w-50 bg-red-500" hoverColor="red-400" href="mailto:melvinthebohe@gmail.com" title="melvinthebohe@gmail.com">
@@ -25,11 +25,11 @@ import LinkedIn from '../icons/LinkedIn.astro';
 				</SocialPill>
 			</ul>
     </div>
-    <div class="w-full px-4 py-6 bg-gray-900 text-center">
-        <p class="text-gray-400 text-sm">
+    <div class="w-full lg:px-4 lg:py-6 px-4 py-10 bg-gray-900 text-center">
+        <p class="text-gray-400 lg:text-sm text-lg mb-4">
             Diseñado y desarrollado por Melvin Brito Aquino
         </p>
-        <p class="text-gray-400 text-sm">
+        <p class="text-gray-400 lg:text-sm text-lg mb-4">
             &copy; {new Date().getFullYear()} Melvin's Portfolio
         </p>
     </div>

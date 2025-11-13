@@ -1,13 +1,28 @@
 ---
-import { setupActiveNav } from "../scripts/activeNav.js";
+// import { setupActiveNav } from "../scripts/activeNav.js";
 ---
-<header class="w-full d-relative flex justify-center items-center py-2 mx-auto bg-linear-to-r from-white/10 to-blue-500/10 backdrop-blur-lg border border-white/20 rounded-2xl shadow-md fixed top-0 left-0 right-0 z-50">
+<header
+  class="lg:w-6xl
+  w-4xl flex justify-center items-center
+  lg:py-2 lg:mx-auto bg-linear-to-r
+  from-white/10 to-blue-500/10 backdrop-blur-lg border
+  border-white/20 lg:rounded-2xl rounded-4xl shadow-md
+  lg:fixed lg:top-0 lg:left-0 lg:right-0 lg:z-50
+  fixed top-0 z-50 lg:mt-0 mt-5">
 
-    <nav id="header0" class="w-full h-7 flex flex-row justify-center mx-auto gap-x-10 opacity-80 text-white font-medium text-lg">
-        <a class="nav-link hover:text-blue-300 hover:border-b hover:scale-105 transition-transform duration-100" href="#inicio">Inicio</a>
-        <a class="nav-link hover:text-blue-300 hover:border-b hover:scale-105 transition-transform duration-100" href="#proyectos">Proyectos</a>
-        <a class="nav-link hover:text-blue-300 hover:border-b hover:scale-105 transition-transform duration-100" href="#sobre-mi">Sobre mí</a>
-        <a class="nav-link hover:text-blue-300 hover:border-b hover:scale-105 transition-transform duration-100" href="#footer-contacto">Contacto</a>
+    <nav id="header0"
+        class="
+        lg:flex-row lg:w-6xl lg:h-7
+        w-full h-30 py-10
+        flex flex-row justify-center
+        lg:py-0 lg:mx-auto gap-x-10 opacity-80
+      text-white font-medium lg:text-lg
+        text-center text-3xl space-y-4 lg:space-y-0
+        ">
+        <a class="nav-link hover:text-blue-300 hover:border-b hover:scale-105 transition-transform duration-100 text-shadow-lg/80 lg:text-lg" href="#inicio">Inicio</a>
+        <a class="nav-link hover:text-blue-300 hover:border-b hover:scale-105 transition-transform duration-100 text-shadow-lg/80 lg:text-lg" href="#proyectos">Proyectos</a>
+        <a class="nav-link hover:text-blue-300 hover:border-b hover:scale-105 transition-transform duration-100 text-shadow-lg/80 lg:text-lg" href="#sobre-mi">Sobre mí</a>
+        <a class="nav-link hover:text-blue-300 hover:border-b hover:scale-105 transition-transform duration-100 text-shadow-lg/80 lg:text-lg" href="#footer-contacto">Contacto</a>
     </nav>
-    
+
 </header>

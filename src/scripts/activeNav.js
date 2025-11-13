@@ -9,7 +9,7 @@ export function setupActiveNav() {
     let current = "";
 
     // Detectar si estamos al inicio (antes de la primera sección)
-    if (window.scrollY < 100) {
+    if (window.scrollY < 100 && sections.length > 0) {
       current = "inicio"; // ID de tu sección o anchor inicial
     }
 
@@ -38,6 +38,7 @@ export function setupActiveNav() {
       }
     });
   });
+
 }
 
 document.addEventListener("DOMContentLoaded", setupActiveNav);

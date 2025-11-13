@@ -5,21 +5,20 @@ import CssIcon from '../icons/Css.astro';
 import JavaScriptIcon from '../icons/JavaScript.astro';
 import BootstrapIcon from '../icons/Bootstrap.astro';
 ---
-<section id="proyectos" class="fade-section md:w-3xl w-4xl mx-auto my-12 py-12 bg-linear-to-r from-white/10 to-blue-500/10 backdrop-blur-lg border border-white/20 rounded-3xl">
+<section id="proyectos" class="fade-section lg:w-6xl w-4xl mx-auto my-12 py-12 bg-linear-to-r from-white/10 to-blue-500/10 backdrop-blur-lg border border-white/20 rounded-3xl">
     <!-- Proyectos Destacados -->
-		<section class="max-w-3xl mx-auto py-5">
-			<h2 class="text-3xl text-white/50 font-semibold text-center mt-5 mb-10 text-shadow-lg/80 underline scale-105 transition-all duration-300 underline-offset-8">
+	 <h2 class="text-5xl text-white/50 font-semibold text-center mt-5 mb-10 text-shadow-lg/80 scale-105 transition-all duration-300 underline decoration-yellow-600 underline-offset-10">
 				Proyectos Destacados
 			</h2>
-			<div class="grid md:grid-cols-2 gap-8 px-5">
+			<div class="grid grid-cols-2 lg:grid-cols-3 gap-8 px-7">
 				<!-- Proyecto 1 -->
 				<div class="bg-white/10 rounded-lg shadow-md overflow-hidden mt-10 hover:scale-105 transition-transform duration-300 shadow-black-500/60">
 					<a href="https://melvinprogram.github.io/proyecto-landing-frutas/" target="_blank" rel="noopener noreferrer">
-						<img src="https://melvinprogram.github.io/proyecto-landing-frutas/assets/image/frutas/carambola-2.webp" alt="Estrella Tropical" class="w-full h-48 object-cover opacity-50 hover:opacity-100" title="Clic para ver Estrella Tropical">
+						<img src="https://melvinprogram.github.io/proyecto-landing-frutas/assets/image/frutas/carambola-2.webp" alt="Estrella Tropical" class="w-full size-60 object-cover lg:opacity-80 lg:hover:opacity-100 opacity-90" title="Clic para ver Estrella Tropical">
 					</a>
 					<div class="p-4">
-						<h3 class="text-xl font-semibold mb-2 text-shadow-lg/80 text-shadow-orange-800/30 hover:scale-101 transition-all duration-300">Estrella Tropical</h3>
-						<p class="text-white/80 mb-4">En Estrella Tropical, nos apasiona llevarte en un viaje culinario a través de las frutas más exóticas y deliciosas del mundo</p>
+						<h3 class="lg:text-2xl text-4xl font-semibold mb-2 text-shadow-lg/80 text-shadow-orange-800/30 hover:scale-101 transition-all duration-300">Estrella Tropical</h3>
+						<p class="text-white/80 mb-4 lg:text-lg font-semibold">En Estrella Tropical, nos apasiona llevarte en un viaje culinario a través de las frutas más exóticas y deliciosas del mundo</p>
 						<a href="https://melvinprogram.github.io/proyecto-landing-frutas/" class="text-blue-500 hover:underline text-shadow-lg/30" target="_blank" >Ver más</a>
 					</div>
 					<!-- Tecnologías Usadas -->
@@ -53,6 +52,6 @@ import BootstrapIcon from '../icons/Bootstrap.astro';
 					</div>
 				</div> -->
 			</div>
-		</section>
+	<!-- Más proyectos u otro contenido pueden ir aquí -->
     <slot />
 </section>
