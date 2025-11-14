@@ -5,7 +5,7 @@ export function setupScrollFade() {
 
   const appearOptions = {
     threshold: 0.2, // porcentaje visible antes de activar
-    rootMargin: "0px 0px -50px 0px",
+    rootMargin: "0px 0px -40px 0px",
   };
 
   const appearOnScroll = new IntersectionObserver(function (entries, observer) {

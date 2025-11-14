@@ -32,9 +32,9 @@ export function setupActiveNav() {
 
     // Actualizar la navegación
     navLinks.forEach((link) => {
-      link.classList.remove("text-cyan-400", "font-semibold");
+      link.classList.remove("text-yellow-600", "font-semibold");
       if (link.getAttribute("href") === `#${current}`) {
-        link.classList.add("text-cyan-400", "font-semibold");
+        link.classList.add("text-yellow-600", "font-semibold");
       }
     });
   });

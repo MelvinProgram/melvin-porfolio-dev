@@ -9,9 +9,9 @@
 
 
 .bg-animated-gradient {
-  background: linear-gradient(-45deg, #726c6b, #375688c8, #155080b2);
-  background-size: 800% 800%;
-  animation: gradient 25s ease-in-out infinite;
+  background: linear-gradient(-45deg, #543500, #000000c8, #4aaeffb2);
+  background-size: 400% 400%;
+  animation: gradient 5s ease-in-out infinite;
 
 }
 
