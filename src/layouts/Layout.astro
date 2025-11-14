@@ -18,8 +18,7 @@
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title> <!-- Use the title prop here -->
 	</head>
-	<body class="md:bg-animated-gradient lg:bg-animated-gradient w-250 min-h-screen relative">
-		<!-- <div class="absolute top-0 z-[-2] h-screen w-screen bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"></div> -->
+	<body class="grid grid-cols-1 col-span-1 mx-auto lg:bg-animated-gradient relative">
 		<Header />
 		<slot />
 	</body>
@@ -39,9 +38,6 @@
 	}
 
 	body {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		background-color: #050505;
+		box-sizing: border-box;
 	}
 </style>
