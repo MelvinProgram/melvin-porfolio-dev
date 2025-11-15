@@ -7,28 +7,32 @@ import BootstrapIcon from '../icons/Bootstrap.astro';
 ---
 <section id="proyectos" 
 	class="fade-section 
-		lg:w-7xl lg:mt-40 lg:py-20 lg:px-20
-			md:w-5xl md:px-10 md:mt-40 md:py-20 md:mx-auto
-			w-5xl h-full mx-auto px-10 my-70 py-50
-			bg-linear-to-r from-gray/30 to-blue-500/30 backdrop-blur-lg border border-white/20 rounded-3xl">
+		lg:w-[1000px] lg:mt-40 lg:py-20 lg:px-20
+		md:w-[700px] md:px-10 md:mt-40 md:py-20 md:mx-auto
+		w-full mx-auto px-10 my-20 py-30
+		bg-linear-to-r from-gray/30 to-blue-500/30 backdrop-blur-lg border border-white/20 rounded-3xl">
     <!-- Proyectos Destacados -->
-	 <h2 class="text-5xl text-white/50 font-semibold text-center mt-2 mb-30 text-shadow-lg/80 scale-105 transition-all duration-300 underline decoration-yellow-600 underline-offset-10">
+	 <h2 class="text-3xl lg:text-5xl text-white/50 font-semibold text-center mt-2 mb-30 text-shadow-lg/80 scale-105 transition-all duration-300 underline decoration-yellow-600 underline-offset-10">
 				Proyectos Destacados
 			</h2>
-			<div class="grid grid-cols-1 lg:grid-cols-1 gap-8 px-7">
+			<div class="grid grid-cols-1 lg:grid-cols-1 gap-10 lg:px-20">
 				<!-- Proyecto 1 -->
-				<div class="bg-white/10 rounded-lg shadow-md overflow-hidden mt-10 pb-40 lg:pb-10 hover:scale-105 transition-transform duration-300 shadow-black-500/60">
+				<div class="bg-white/30 rounded-lg shadow-md overflow-hidden mt-10 lg:pb-10 hover:scale-105 transition-transform duration-300 shadow-black-500/60">
 					<a href="https://melvinprogram.github.io/proyecto-landing-frutas/" target="_blank" rel="noopener noreferrer">
-						<img src="https://melvinprogram.github.io/proyecto-landing-frutas/assets/image/frutas/carambola-2.webp" alt="Estrella Tropical" class="w-full size-6/12 object-cover lg:opacity-80 lg:hover:opacity-100 opacity-90" title="Clic para ver Estrella Tropical">
+						<img src="https://melvinprogram.github.io/proyecto-landing-frutas/assets/image/frutas/carambola-2.webp" alt="Estrella Tropical" 
+						class="w-full size-2/12 md:w-[700px] md:h-[400px] lg:w-300 lg:h-96
+							object-cover lg:opacity-70 lg:hover:opacity-100
+							opacity-90" 
+						title="Clic para ver Estrella Tropical">
 					</a>
 					<div class="p-5 ">
-						<h3 class="lg:text-2xl text-white/80 text-6xl text-shadow-lg/80 lg:my-5 mb-10 shadow-amber-400 font-semibold  hover:scale-101 transition-all duration-300">Estrella Tropical</h3>
-						<p class="text-white/80 mb-4 text-4xl lg:text-lg font-semibold">En Estrella Tropical, nos apasiona llevarte en un viaje culinario a través de las frutas más exóticas y deliciosas del mundo</p>
-						<a href="https://melvinprogram.github.io/proyecto-landing-frutas/" class="lg:text-3xl text-3xl text-blue-500 hover:underline text-shadow-lg/30" target="_blank" >Ver más</a>
+						<h3 class="lg:text-2xl text-white/80 text-[30px] text-shadow-lg/80 lg:my-5 my-10 shadow-amber-400 font-semibold  hover:scale-101 transition-all duration-300">Estrella Tropical</h3>
+						<p class="text-white/80 mb-4 text-[18px] lg:text-lg font-semibold">En Estrella Tropical, nos apasiona llevarte en un viaje culinario a través de las frutas más exóticas y deliciosas del mundo</p>
+						<a href="https://melvinprogram.github.io/proyecto-landing-frutas/" class="lg:text-[20px] text-[16px] text-blue-500 hover:underline text-shadow-lg/30" target="_blank" >Ver más</a>
 					</div>
 					<!-- Tecnologías Usadas -->
-					<h3 class="w-full px-5 mx-auto lg:text-lg text-5xl text-white/90 font-semibold mb-2">Tecnologías Usadas:</h3>
-					<ul class="px-auto my-10 py-10 flex md:flex-row flex-wrap justify-center gap-x-3 gap-y-2">
+					<h3 class="w-full px-5 mx-auto lg:text-lg text-2xl text-white/90 font-semibold mb-2">Tecnologías Usadas:</h3>
+					<ul class="my-10 lg:py-5 flex flex-col lg:flex-row md:flex-row flex-wrap justify-center lg:gap-x-3 lg:gap-y-2 text-center items-center">
 						<SocialPill href="#" hoverColor="orange-400">
 							<HtmlIcon />
 							HTML5

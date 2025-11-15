@@ -13,7 +13,7 @@ import JavaScriptIcon from '../icons/JavaScript.astro';
 import TailwindCss from '../icons/TailwindCss.astro';
 import AstroIcon from '../icons/AstroIcon.astro';
 import SectionProyectos from '../components/SectionProyectos.astro';
-import Footer from '../components/Footer.astro'
+import Footer from '../components/Footer.astro';
 import SeccionSobreMi from '../components/SeccionSobreMi.astro';
 // const hoverColor = Astro.props.hoverColor;
 
@@ -22,18 +22,18 @@ import SeccionSobreMi from '../components/SeccionSobreMi.astro';
 ---
 
 <Layout title="Melvin Brito Portfolio">
-	<main class="max-w-full sm:w-full md:max-w-full lg:max-w-full lg:mx-auto flex flex-col justify-center">
+	<main class="max-w-full sm:w-full md:max-w-full lg:max-w-full lg:mx-auto flex flex-col justify-center items-center">
+		
 		<section id="inicio"
 		class="
 			fade-section 
-			lg:w-7xl lg:mt-40 lg:py-20 lg:px-20
-			md:w-5xl md:px-10 md:mt-40 md:py-20 md:mx-auto
-			w-5xl h-full mx-auto px-10 my-70 py-50
-			flex justify-center lg:flex-col
-			flex-col
-			items-center
+			lg:w-[1000px] lg:mt-40 lg:py-20 lg:px-20
+			md:w-[700px] md:px-10 md:mt-40 md:py-20 md:mx-auto
+			w-full mx-auto px-10 my-20 py-30
+			flex justify-center flex-col
+			flex-wrap items-center
 			bg-linear-to-r from-gray/50
-			to-blue-500/40 backdrop-blur-lg
+			to-blue-500/30 backdrop-blur-lg
 			border border-white/20 rounded-3xl ">
 			<div class="w-full flex justify-center pb-5">
 				<img class="rounded-full w-40 h-40 mb-8 border-4 border-blue-500 hover:scale-105 transition-all duration-300 hover:shadow-2xl shadow-yellow-400/40"
@@ -41,7 +41,7 @@ import SeccionSobreMi from '../components/SeccionSobreMi.astro';
 				alt="Melvin Foto"
 			/>
 			</div>
-			<h1 class="text-6xl lg:w-full lg:text-5xl font-bold text-white/70 flex flex-row items-center gap-x-3 pb-30">
+			<h1 class="text-5xl lg:w-full lg:text-5xl lg:text-left text-center font-bold text-white/70 flex flex-row flex-wrap items-center gap-x-3 lg:pb-30 pb-20">
 				Hola, soy <span class="text-blue-400 text-shadow-lg/70">Melvin Brito</span>
 				<a
 					href="https://www.linkedin.com/in/melvin-brito-7b7904296/"
@@ -52,12 +52,12 @@ import SeccionSobreMi from '../components/SeccionSobreMi.astro';
 				</a>
 
 			</h1>
-			<h2 class="lg:w-full pb-4 lg:text-xl text-4xl text-white/80 text-justify my-10 opacity-90">
+			<h2 class="lg:w-full pb-4 lg:text-xl text-2xl text-white/80 text-justify my-10 opacity-90">
 				Bienvenidos a mi portafolio personal. Soy un <span class="text-yellow-500/90 text-shadow-lg/70">Programador de Páginas Web</span> apasionado por crear experiencias digitales únicas y funcionales.
 				<br><br>
 				Actualmente estoy viviendo en <span class="text-yellow-500/90 text-shadow-lg/70"> Madrid, España.</span> Donde recientemente he completado un Grado Superior de Programación en Desarrollo de Páginas web full-stack en la <a  class="text-yellow-500/90 lg:text-shadow-lg/70 lg:hover:underline lg:hover:underline-offset-2 underline" href="https://www.masterd.es/fp-tecnico-superior-desarrollo-web" target="_blank">Escuela de Informática y Comunicaciones MasterD</a>.
 			</h2>
-			<h2 class="lg:w-full lg:text-xl text-4xl text-white/80 text-justify mb-4 text-wrap opacity-90">
+			<h2 class="lg:w-full lg:text-xl text-2xl text-white/80 text-justify mb-4 text-wrap opacity-90">
 				 Durante este grado superior, adquirí habilidades sólidas en tecnologías y herramientas claves:
 			</h2>
 
@@ -105,8 +105,7 @@ import SeccionSobreMi from '../components/SeccionSobreMi.astro';
 			</ul>
 		</section>
 		<SectionProyectos />
-		<SeccionSobreMi />
+		<SeccionSobreMi /> 
 	</main>
 	<Footer />
-
 </Layout>
